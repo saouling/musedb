@@ -25,8 +25,11 @@ $ node -v
 $ npm -v
 ```
 
-The first thing to do is to clone this github repo in order to have it locally  
-`git clone https://github.com/saouling/musedb.git`
+The first thing to do is to clone this github repo in order to have it locally:
+
+```shell
+$ git clone https://github.com/saouling/musedb.git
+```
 
 ### Create the Database
 
@@ -59,4 +62,4 @@ $ npm install
 $ npm start
 ```
 
-After this, the terminal should redirect you to `localhost:3000`: that's where the React app is running. You should see the welcoming message.
+After this, the terminal should redirect you to `localhost:3000`: that's where the React app is running. You should see the welcoming messages.

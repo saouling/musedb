@@ -5,17 +5,7 @@ const museums_router = express.Router()
 const mysql = require('mysql')
 const bodyParser = require('body-parser').json();
 
-function getMuseDBConnection() {
-    return mysql.createConnection({
-      host: 'localhost',
-      port: 3306,
-      user: 'root',
-      password: '19mariamaria',
-      database: 'musedb'    
-    })
-  }
-
-  museums_router.use(cors())
+museums_router.use(cors())
 
 // GET museums
 museums_router.get('/museums', (req, res) => {

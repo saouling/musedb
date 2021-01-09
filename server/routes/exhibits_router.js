@@ -5,17 +5,6 @@ const mysql = require('mysql')
 const bodyParser = require('body-parser').json();
 const cors = require('cors');
 
-function getMuseDBConnection() {
-    return mysql.createConnection({
-      host: 'localhost',
-      port: 3306,
-      user: 'root',
-      password: '19mariamaria',
-      database: 'musedb',
-      multipleStatements: true    
-    })
-  }
-
 exhibits_router.use(cors())
 
 // GET exhibits based on exhibitID

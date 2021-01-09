@@ -4,16 +4,6 @@ const creators_router = express.Router()
 const mysql = require('mysql')
 const bodyParser = require('body-parser').json();
 
-function getMuseDBConnection() {
-    return mysql.createConnection({
-      host: 'localhost',
-      port: 3306,
-      user: 'root',
-      password: '19mariamaria',
-      database: 'musedb'    
-    })
-  }
-
 // GET exhibits based on exhibitID
 creators_router.get('/creators/:id', (req, res) => {
     console.log("Fetching creator with id " + req.params.id)
