@@ -31,7 +31,7 @@ function AboutPage() {
           museDB is an application built using React.js, Node.js, Express and MariaDB.  
         </Typography>
         <Typography color="textSecondary" variant="h5" component="h1" align="left">
-          it allows users to navigate through museums from Europe, as well as through the exhibits they demonstrate. Information about the creators are also hosted in our database.
+          it allows users to navigate through museums from Europe, as well as through the exhibits they demonstrate. Information about the creators is also stored in our database.
         </Typography>
         <Typography color="textPrimary" variant="h5" component="h1" align="left">
           the museum responsible employees are able to add museums or exhibits from exhibitions the manage, by filling forms.
@@ -44,7 +44,7 @@ function AboutPage() {
         </Typography>
         <br></br>
         <Typography color="textPrimary" variant="subtitle1" component="subtitle1" align="left">
-          *museDB is a project for the Databases, School of Engineering, Department of Electrical and Computer Engineering, Aristotle University of Thessaloniki, January 2020.  
+          * museDB was created as a project for the Database Systems course, 9th semester, School of Engineering, Department of Electrical & Computer Engineering, Aristotle University of Thessaloniki, January 2020. Professor: Themistoklis Diamantopoulos.        
         </Typography>
       </Container>
     </div>

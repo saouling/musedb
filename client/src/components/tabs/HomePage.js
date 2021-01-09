@@ -25,9 +25,9 @@ function HomePage() {
           museDB is a modern app designed for people who love art  
         </Typography>
         <Typography color="textSecondary" variant="h4" component="h1" align="right">
-          by people who love art  
+          by people who love art.  
         </Typography>
-        <br/> <br/>
+        <br/>
         <Typography color="textPrimary" variant="h4" component="h1" align="left">
           use the bar at the top to navigate through museums, exhibits, creators.  
         </Typography>

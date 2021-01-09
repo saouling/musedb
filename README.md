@@ -33,23 +33,46 @@ $ git clone https://github.com/saouling/musedb.git
 
 ### Create the Database
 
-Run the SQL script `musedbdump.sql`, which is inside the `/database` directory, with your favourite RDBMS. The development and testing of the museDB application was done using **MariaDB**. Please configure the system to run at `port: 3306` in order to be compatible with the settings of the node.js app.  
+Run the SQL script `musedbdump.sql`, which is inside the `/database` directory, with your favourite RDBMS. The development and testing of the museDB application was done using **MariaDB**. Please configure the system to run at `port: 3306` in order to be compatible with the settings of the node.js app. If you choose another port, make sure to make the required changes described on the next section.
 The `musedbdump.sql` script generates the `musedb` database and provides some initial data for every table so as the application is functional from the start.
 
 ### Run the Backend Node.js Server
 
-Navigate in the `/server` directory and use `npm install` to install the dependencies. Then use `node app` to run the application.
+Navigate in the `/server` directory and use `npm install` to install the dependencies.
 
 ```shell
 $ cd server
 $ npm install
+```
+
+Before actually running the server, let's make sure that we got a valid communication with our RDBMS.  
+Still in the `/server` directory, look for a file named `databaseConnect.js`. Open it with your favourite text editor and edit the lines of codes with comments. Specifically, you should your `port` number should be the same with the one of your RDBMS configuration (we set `port: 3306`). Then, you should edit `user` and `password`, setting them again to match those of your RDBMS configuration. For example we set `user: 'root'` and `password: '19mariamaria'`. The other options should be remain unchanged:
+
+```javascript
+//...
+this.getMuseDBConnection = function () {
+  return mysql.createConnection({
+    host: "localhost",
+    port: 3306, // Specify the port of your database system
+    user: "root", // Specify your username
+    password: "19mariamaria", // Specify your password
+    database: "musedb",
+    multipleStatements: true,
+  });
+};
+//...
+```
+
+Finally, use `node app` to run the application.
+
+```shell
 $ node app
 ```
 
 You should see the following message:
 
 ```shell
-$ Server is up and listening on 3003...
+$ museDB server is up and listening on port 3003...
 ```
 
 ### Run the Frontend React npm Server
@@ -63,3 +86,14 @@ $ npm start
 ```
 
 After this, the terminal should redirect you to `localhost:3000`: that's where the React app is running. You should see the welcoming messages.
+
+### Port configuration
+
+Please let us review the port configuration we described above, for clarity reasons.
+
+- RDBMS: `localhost:3306`
+- Server (node.js app): `localhost:3003`
+- Client (React.js app): `localhost:3000`
+
+<br/><hr/> \* museDB was created as a project for the **Database Systems** course, 9th semester, School of Engineering, Department of Electrical & Computer Engineering, Aristotle University of Thessaloniki, January 2020.  
+Professor: Themistoklis Diamantopoulos.
