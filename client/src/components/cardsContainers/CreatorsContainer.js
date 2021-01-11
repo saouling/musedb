@@ -10,10 +10,10 @@ function CreatorsContainer() {
   const originalCreator = 
     [
       {
-        "name": "Test",
-        "bio": "Creator",
-        "nationality": "nationality",
-        "imagsrc": "https://www.animationvideo.co/wp-content/uploads/2017/12/How-to-video.jpg"
+        "name": "Loading",
+        "bio": "Please wait a sec...",
+        "nationality": "Loading",
+        "imagsrc": ""
       }
     ]
   

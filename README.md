@@ -38,7 +38,7 @@ The `musedbdump.sql` script generates the `musedb` database and provides some in
 
 ### Run the Backend Node.js Server
 
-Navigate in the `/server` directory and use `npm install` to install the dependencies.
+Open a terminal window and navigate in the `/server` directory. Use `npm install` to install the dependencies.
 
 ```shell
 $ cd server
@@ -75,9 +75,11 @@ You should see the following message:
 $ museDB server is up and listening on port 3003...
 ```
 
+Please **do not close** this terminal window as you proceed with the next step.
+
 ### Run the Frontend React npm Server
 
-Navigate in the `/client` directory and use `npm install` to install the dependencies (this may take a while...). Then use `npm start` to run the development server.
+Open a **new** terminal window and navigate in the `/client` directory. Once again, use `npm install` to install the dependencies (this may take a while...). Then use `npm start` to run the development server.
 
 ```shell
 $ cd client
@@ -85,7 +87,7 @@ $ npm install
 $ npm start
 ```
 
-After this, the terminal should redirect you to `localhost:3000`: that's where the React app is running. You should see the welcoming messages.
+After this, the terminal should redirect you to `localhost:3000`: that's where the React app is running. You should see the welcoming messages on the museDB homepage.
 
 ### Port configuration
 
@@ -96,4 +98,4 @@ Please let us review the port configuration we described above, for clarity reas
 - Client (React.js app): `localhost:3000`
 
 <br/><hr/> \* museDB was created as a project for the **Database Systems** course, 9th semester, School of Engineering, Department of Electrical & Computer Engineering, Aristotle University of Thessaloniki, January 2020.  
-Professor: Themistoklis Diamantopoulos.
+Supervising Professor: _Themistoklis Diamantopoulos_.

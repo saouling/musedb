@@ -11,11 +11,11 @@ function CardsContainer() {
   const originalExhibit = 
     [
       {
-        "name": "Test",
-        "creator": "Creator",
-        "description": "Description",
+        "name": "Loading",
+        "creator": "Loading Creator",
+        "description": "Wait a sec...",
         "type": "Type",
-        "imagsrc": "https://www.animationvideo.co/wp-content/uploads/2017/12/How-to-video.jpg"
+        "imagsrc": ""
       }
     ]
   

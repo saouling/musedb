@@ -4,6 +4,7 @@ import MuseumCard from '../cards/MuseumCard';
 import Typography from '@material-ui/core/Typography';
 import {Link} from 'react-router-dom'
 import SearchBar from "material-ui-search-bar";
+import loadingImage from '../../media/loading.jpg'
 
 function MuseumsContainer() {
   
@@ -11,10 +12,10 @@ function MuseumsContainer() {
   const originalMuseum = 
   [
     {
-      "name": "Test",
-      "description": "Description",
-      "type": "Type",
-      "imagsrc": "https://www.animationvideo.co/wp-content/uploads/2017/12/How-to-video.jpg"
+      "name": "Loading",
+      "description": "Loading Museum Cards...",
+      "type": "Wait a sec...",
+      "imagsrc": ""
     }
   ]
 
