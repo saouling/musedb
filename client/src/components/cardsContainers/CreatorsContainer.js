@@ -18,7 +18,6 @@ function CreatorsContainer() {
     ]
   
   const [creatorData, setCreatorData] = useState(originalCreator); 
-  const [searchText, setSearchText] = useState("");
 
   console.log(creatorData)
 

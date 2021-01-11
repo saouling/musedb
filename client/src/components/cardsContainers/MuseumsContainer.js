@@ -20,7 +20,6 @@ function MuseumsContainer() {
   ]
 
 const [museumData, setMuseumData] = useState(originalMuseum); 
-const [searchText, setSearchText] = useState("");
 
 // console.log(museumData)
 

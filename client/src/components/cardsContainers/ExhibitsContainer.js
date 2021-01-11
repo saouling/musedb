@@ -20,7 +20,6 @@ function CardsContainer() {
     ]
   
   const [exhibitData, setExhibitData] = useState(originalExhibit); 
-  const [searchText, setSearchText] = useState("");
 
   console.log(exhibitData)
 
